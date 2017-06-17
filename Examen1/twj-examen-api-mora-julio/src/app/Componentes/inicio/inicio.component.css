@@ -1,0 +1,20 @@
+body {
+  background-color: red;
+  color:white;
+}
+
+h1 {
+  background-color: red;
+  color:white;
+  text-align: center;
+}
+
+p {
+  background-color: red;
+}
+div{
+  color:white;
+  font-family: "Open Sans", "Myriad Pro", Arial, sans-serif;
+  font-size: 1.2em;
+}
+

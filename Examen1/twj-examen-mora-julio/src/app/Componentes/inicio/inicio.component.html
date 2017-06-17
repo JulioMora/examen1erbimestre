@@ -1,0 +1,46 @@
+<div class="container">
+
+  <h1>Examen Julio Mora</h1>
+
+  <h2>Ingrese Heroe</h2>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="col-form-label">Nombre del Heroe:
+        </label>
+        <input class="form-control"
+               placeholder="Ingrese Nombre"
+               [(ngModel)]="nuevoHeroe.nombre" type="text">
+        <label class="col-form-label">Castillo del Heroe:
+        </label>
+        <input class="form-control"
+               placeholder="Ingrese Castillo"
+               [(ngModel)]="nuevoHeroe.castillo" type="text">
+        <label class="col-form-label">Nivel del Heroe:
+        </label>
+        <input class="form-control"
+               placeholder="Ingrese Nivel"
+               [(ngModel)]="nuevoHeroe.nivel" type="number">
+      </div>
+
+      <br>
+      <button class="btn btn-success"
+              (click)="crearHeroe()">
+        Crear Nuevo Heroe
+      </button>
+      <br>
+      <br>
+    </div>
+  </div>
+  <h3>Heroes:</h3>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let heroe of heroes; let indice = index;">
+      <app-heroes [heroes]="heroe">
+
+      </app-heroes>
+    </div>
+  </div>
+</div>

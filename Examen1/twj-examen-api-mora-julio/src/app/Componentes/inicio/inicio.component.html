@@ -1,0 +1,21 @@
+<body>
+<p style="text-align:center;"><img src="https://pbs.twimg.com/profile_images/744949842720391168/wuzyVTTX.jpg" alt="" height="100" width="100"></p>
+<h1>Bienvenido a la API de Netflix</h1>
+<br>
+<h2>Lista de Peliculas</h2>
+<br>
+<h2>De Quentin Tarantino</h2>
+<br>
+<div class="container"  >
+<div class="row">
+  <div class="col-lg-4" *ngFor="let peliculaVariable of peliculas; let i=index; ">
+    <app-pelicula [peliculas]="peliculaVariable">
+
+    </app-pelicula>
+
+  </div>
+</div>
+</div>
+<br>
+<br>
+</body>
