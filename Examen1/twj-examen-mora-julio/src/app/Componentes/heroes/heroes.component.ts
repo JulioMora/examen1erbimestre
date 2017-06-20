@@ -8,9 +8,9 @@ import {HeroesClass} from "../../Clases/HeroesClass";
 })
 export class HeroesComponent implements OnInit {
 
-  @Input() heroes:HeroesClass;
+  @Input() heroesInput:HeroesClass;
   constructor() {
-    console.log("datos",this.heroes)
+    console.log("datos",this.heroesInput)
   }
 
   ngOnInit() {

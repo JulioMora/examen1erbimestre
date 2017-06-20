@@ -7,9 +7,9 @@ import {PeliculasSpielberg} from "../../Interfaces/PeliculasSpielberg";
   styleUrls: ['./pelicula.component.css']
 })
 export class PeliculaComponent implements OnInit {
-@Input() peliculas:PeliculasSpielberg
+@Input() peliculasInput:PeliculasSpielberg
   constructor() {
-  console.log("Datos",this.peliculas)
+  console.log("Datos",this.peliculasInput)
   }
 
   ngOnInit() {

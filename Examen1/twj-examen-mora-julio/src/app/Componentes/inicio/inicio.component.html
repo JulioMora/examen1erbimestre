@@ -1,5 +1,5 @@
 <div class="container">
-
+  <p style="text-align:center;"><img src="https://pbs.twimg.com/profile_images/808475349671493632/nvi7WJf4_400x400.jpg" alt="" height="100" width="100"></p>
   <h1>Examen Julio Mora</h1>
 
   <h2>Ingrese Heroe</h2>
@@ -37,8 +37,8 @@
   <br>
   <br>
   <div class="row">
-    <div class="col-sm-3" *ngFor="let heroe of heroes; let indice = index;">
-      <app-heroes [heroes]="heroe">
+    <div class="col-sm-3" *ngFor="let heroei of heroes; let indice = index;">
+      <app-heroes [heroesInput]="heroei">
 
       </app-heroes>
     </div>
