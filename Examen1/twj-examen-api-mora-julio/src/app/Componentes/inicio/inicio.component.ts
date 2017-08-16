@@ -13,7 +13,7 @@ export class InicioComponent implements OnInit {
 
   ngOnInit() {
     this._http
-      .get("http://netflixroulette.net/api/api.php?director=Quentin%20Tarantino")
+      .get("https://netflixroulette.net/api/api.php?director=Quentin%20Tarantino")
       .subscribe(
         respuesta=>{
           let rjson:PeliculasSpielberg[] = respuesta.json();
