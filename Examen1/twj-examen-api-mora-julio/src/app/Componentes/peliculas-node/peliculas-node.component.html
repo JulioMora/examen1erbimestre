@@ -1,3 +1,12 @@
+<body>
+<p style="text-align:center;"><img src="https://avatars1.githubusercontent.com/u/5375661?v=4&s=400" alt="" height="100" width="100"></p>
+<h1>Bienvenido a la API de NODE</h1>
+<br>
+<h2>Lista de Peliculas</h2>
+<br>
+<h2>De Quentin Tarantino</h2>
+
+<br>
 <div class="container">
   <br>
   <br>
@@ -8,15 +17,13 @@
         <div class="card" style="width: 20rem;">
           <img class="card-img-top" src="{{peliculaVariable.poster}}" alt="Card image cap">
           <div class="card-block">
-            <h4  class="card-title">Auto</h4>
+            <h4  class="card-title">Pelicula</h4>
 
             <p><strong>Titulo:</strong> {{peliculaVariable.show_title}}</p>
             <p><strong>Año:</strong>{{peliculaVariable.release_year}}</p>
             <p><strong>Categoria:</strong>{{peliculaVariable.category}}</p>
             <p><strong>Calificacion:</strong>{{peliculaVariable.rating}}</p>
-            <button  class="btn btn-danger" (click)="eliminarPeliBackend(peliculaVariable,peliculaVariable._id)">Eliminar</button>
-
-
+            <button  class="btn btn-danger" (click)="eliminarPeliBackend(peliculaVariable,peliculaVariable._id);eliminarPeliFrontEnd($event)">Eliminar</button>
 
           </div>
         </div>
@@ -25,3 +32,4 @@
   </div>
 
 </div>
+</body>

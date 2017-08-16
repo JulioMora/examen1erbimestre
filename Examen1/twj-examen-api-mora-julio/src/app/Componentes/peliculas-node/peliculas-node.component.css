@@ -1,0 +1,22 @@
+body {
+  background-color: blue;
+  color:white;
+}
+
+h1 {
+  background-color: blue;
+  color:white;
+  text-align: center;
+}
+.card-block
+{
+  background-color: blue;
+}
+p {
+  background-color: blue;
+}
+div{
+  color:white;
+  font-family: "Open Sans", "Myriad Pro", Arial, sans-serif;
+  font-size: 1.0em;
+}

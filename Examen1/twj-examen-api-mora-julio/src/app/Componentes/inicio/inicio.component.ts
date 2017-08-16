@@ -20,7 +20,7 @@ export class InicioComponent implements OnInit {
 
           this.peliculas = rjson;
 
-          console.log("Usuarios: ",this.peliculas);
+          console.log("Pelis del API: ",this.peliculas);
         },
         error=>{
           console.log("Error: ",error)

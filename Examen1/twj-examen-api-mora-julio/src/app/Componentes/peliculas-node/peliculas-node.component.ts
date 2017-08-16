@@ -31,7 +31,7 @@ export class PeliculasNodeComponent implements OnInit {
            objeto1.prop3 = 3;
            */
 
-          console.log("Pelis: ",this.pelis);
+          console.log("Pelis del NODE: ",this.pelis);
         },
         error=>{
           console.log("Error: ",error)
@@ -45,12 +45,19 @@ export class PeliculasNodeComponent implements OnInit {
       .subscribe(
         respuesta=>{
           this.PeliNodeOutput.emit(peli);
-          //this.usuarios.splice(this.usuarios.indexOf(usuario),1)
+          //this.pelis.splice(this.pelis.indexOf(peli),1)
         },
         error=>{
           console.log("Error",error);
         }
       )
+
+  }
+  eliminarPeliFrontEnd(peli: PeliculasSpielberg) {
+
+    let indice = this.pelis.indexOf(peli);
+
+    this.pelis.splice(indice,1);
 
   }
 }
