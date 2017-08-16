@@ -39,7 +39,7 @@ export class PeliculasNodeComponent implements OnInit {
         }
       )
   }
-  eliminarPeliBackend(peli: PeliculasSpielberg,indice:number) {
+  eliminarPeliBackend(peli: PeliculasSpielberg) {
 
     this._http.delete("https://twj2017a-julio.mybluemix.net/peliculas?id="+peli._id)
       .subscribe(
